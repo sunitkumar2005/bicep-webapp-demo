@@ -23,10 +23,9 @@ module appPlan 'modules/appService/appServicePlan.bicep' = {
 module app 'modules/webApp/webApp.bicep' = {
   scope: rg
   name: webApp.name
-  params: {
+  params: {     
     appServicePlanIdParam: appPlan.outputs.aspId
     environmentParam: resGroup.tags.Environment
-    linuxFxVersionParam: webApp.linuxFxVersion
     webAppNameParam: webApp.name
   }
 }
