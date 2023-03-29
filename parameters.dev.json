@@ -4,16 +4,16 @@
     "parameters": {
         "appServicePlan": {
             "value": {
-                "name": "demo-app-service-plan",
+                "name": "app-service-plan-bicep-demo-sunit",
                 "sku": {
-                        "name": "B1",
-                        "tier": "Basic"
+                        "name": "S1",
+                        "capacity":1
                     }
                 }
         },
         "resGroup": {
             "value": {
-                "name": "demo-app-service-rg",
+                "name": "web-app-service-demo-rg",
                 "tags": {
                     "ApplicationName": "",
                     "Description": "",
@@ -22,10 +22,9 @@
             }
         },
         "webApp": {
-            "value": {
-                "name": "bicep-demo-webapp",
-                "linuxFxVersion": "DOCKER|mcr.microsoft.com/appsvc/staticsite:latest"
-            }
+          "value": {
+            "name": "webapp-bicep-demo-sunit",
+          }
         }
     }
 }
