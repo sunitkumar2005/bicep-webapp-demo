@@ -13,7 +13,7 @@
         },
         "resGroup": {
             "value": {
-                "name": "web-app-service-demo-rg",
+                "name": "sunit-pip-rg-bicep",
                 "tags": {
                     "ApplicationName": "",
                     "Description": "",
